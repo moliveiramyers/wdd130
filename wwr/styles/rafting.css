@@ -1,5 +1,5 @@
 * {
-    max-width: 850px;
+    max-width: 900px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -21,13 +21,42 @@ header {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    display: grid;
+    grid-template-columns: 30% 20% 1fr;
+    background-color: var(--accent2-color);
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    background-color: var(--primary-color);
 }
 
-h1 {
-    font-family: var(--heading-font);
-    font-weight: var(--heading-size);
-    font-style: normal;
-    color: var(--heading-color);
+.linksbox {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-column: 3/4;
+    height: fit-content;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-left: 0%;
+    background-color: var(--secondary-color);
+}
+
+.box {
+    border-right: 1px solid black;
+    padding: 1rem;
+    height: fit-content;
+    text-decoration: none;
+    color: black;
+    flex: 1;
+    text-align: center;
+}
+
+.lastbox {
+    border-right: 0;
 }
 
 h2 {
@@ -37,72 +66,136 @@ h2 {
     color: var(--heading-color);
 }
 
-.sociallinks {
-    text-decoration: var(--remove-hyperlink);
-}
-
-.sociallinks img {
-    width: 4%;
-    height: auto;
+main {
+    padding-left: 0%;
+    padding-right: 0%;
+    /* position: relative; */
 }
 
 .hero {
     position: relative;
     max-width: 840px;
-
 }
 
 .hero img {
-    /* display: block; */
     width: 100%;
     height: auto;
+    padding: 0%;
+    display: block;
 }
 
 .hero h1 {
     position: absolute;
-    top: 15%;
-    left: 30%;
-    background-color: rgba(0, 0, 0, 0.6);
+    top: 5%;
+    left: 1.5%;
+    background-color: rgba(236, 235, 243, 0.6);
+    padding: 20px 262px 20px 262px;
+    color: var(--primary-color);
 }
 
 .hero article {
     position: absolute;
+    display: flex;
     top: 40%;
-    left: 10%;
+    left: 7%;
     width: 80%;
-    overflow: hidden;
-    align-items: center;
     gap: 15px;
     background-color: rgba(50, 51, 104, 0.6);
-
-}
-
-.hero article p {
-    width: 60px;
-    font-family: var(--body-text);
-    padding: 2%;
-    left: 0;
-    overflow: hidden;
-    text-align: justify;
+    justify-content: end;
 }
 
 .hero article img {
+    position: absolute;
     width: 150px;
     border: 1px solid gray;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    float: right;
-    right: 0%;
     margin-left: 15px;
-    display: block;
+    justify-content: end;
+    top: 40px;
+    z-index: 1;
 }
 
-section {
-    position: relative;
+.hero article p {
+    position: absolute;
+    font-family: var(--body-text);
+    padding-left: 0;
+    left: 1%;
+    max-width: 400px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: rgba(21, 21, 51, 0.6);
+    padding: 50px;
+    padding-right: 250px;
+    color: var(--accent2-color);
 }
 
-section img {
+.historysection {
     position: relative;
-    display: block;
-    width: 500px;
+    display: flex;
+    padding-top: 60px;
+    align-items: start;
+}
+
+.historysection img {
+    width: 400px;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.historysection h2 {
+    position: absolute;
+    top: 0px;
+    left: 350px;
+}
+
+.riverpics {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 20px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background-color: var(--accent1-color);
+}
+
+.riverpics h2 {
+    position: absolute;
+    left: 300px;
+    top: 980px;
+}
+
+.riverpics img {
+    width: 150px;
+    grid-row: 1/2;
+}
+
+.riverpics p {
+    text-align: center;
+}
+
+footer {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 75% 10% 15%;
+}
+
+footer p {
+    text-align: end;
+    padding-right: 20px;
+
+}
+
+.sociallinks {
+    text-decoration: var(--remove-hyperlink);
+    grid-column: 3/4;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: right;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: auto;
+    padding: 0;
 }
