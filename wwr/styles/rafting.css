@@ -28,6 +28,7 @@ header {
     padding: 0%;
     margin: 0%;
     background-color: var(--primary-color);
+
 }
 
 .linksbox {
@@ -86,9 +87,9 @@ main {
 .hero h1 {
     position: absolute;
     top: 5%;
-    left: 1.5%;
+    left: 1%;
     background-color: rgba(236, 235, 243, 0.6);
-    padding: 20px 262px 20px 262px;
+    padding: 20px 262px 20px 295px;
     color: var(--primary-color);
 }
 
@@ -150,10 +151,11 @@ main {
 
 .riverpics {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 20px;
+    grid-template-columns: repeat(5, 160px);
+    grid-template-rows: 1fr;
     padding-top: 70px;
     padding-bottom: 20px;
+    padding-left: 0%;
     background-color: var(--accent1-color);
 }
 
@@ -166,10 +168,13 @@ main {
 .riverpics img {
     width: 150px;
     grid-row: 1/2;
+    padding-left: 0%;
+
 }
 
-.riverpics p {
+.riverpics figcaption {
     text-align: center;
+    width: 130px;
 }
 
 footer {
