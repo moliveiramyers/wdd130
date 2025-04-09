@@ -2,6 +2,8 @@
     max-width: 900px;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 100%;
+
 }
 
 :root {
@@ -16,6 +18,16 @@
     --body-text: "Raleway", sans-serif;
 }
 
+body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent2-color);
+}
+
 header {
     font-family: var(--body-text);
     /* font-optical-sizing: auto; */
@@ -28,7 +40,13 @@ header {
     padding: 0%;
     margin: 0%;
     background-color: var(--primary-color);
+    width: 80rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
 
+.headcontainer {
+    padding-right: 2rem;
 }
 
 .linksbox {
@@ -180,13 +198,13 @@ main {
 footer {
     padding-top: 50px;
     display: grid;
-    grid-template-columns: 75% 10% 15%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer p {
-    text-align: end;
+    text-align: center;
     padding-right: 20px;
-
+    grid-column: 2/3;
 }
 
 .sociallinks {
@@ -202,4 +220,179 @@ footer p {
     width: 30px;
     height: auto;
     padding: 0;
+}
+
+/* Contact Us page */
+
+/* employee pictures */
+.employee {
+    position: relative;
+    display: flex;
+    /* grid-template-columns: 1fr 7rem 1fr; */
+    padding: 1rem;
+    margin: 3rem;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.employee img {
+    border: 3px solid rgba(41, 37, 70, 0.2);
+    justify-content: end;
+    width: 250px;
+    border-radius: 0.5rem;
+    padding: 0%;
+}
+
+
+
+.employee h1 {
+    position: absolute;
+    color: var(--primary-color);
+    right: 29%;
+    bottom: 100%;
+    padding: 0%;
+    font-size: 2rem;
+}
+
+/* contact us part */
+
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactus p {
+    grid-column: 1/2;
+
+}
+
+.contactinfo {
+    grid-column: 1/2;
+    padding: 1rem 3rem 1rem 0rem;
+    border-right: 1px solid var(--heading-color);
+}
+
+figure {
+    display: flex;
+    justify-content: start;
+    padding-left: 0%;
+    margin: 0%;
+}
+
+figure img {
+    width: 30px;
+    padding: 0.5rem;
+}
+
+figcaption {
+    display: flex;
+    font-size: medium;
+    color: var(--secondary-color);
+    align-items: center;
+}
+
+iframe {
+    padding: 0%;
+    border-radius: 1rem;
+    width: 20rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Form Styling */
+
+fieldset {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+form {
+    /* width: 600px; */
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: 1px solid rgb(0, 0, 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: white;
+    display: grid;
+}
+
+legend {
+    font-family: var(--heading-font);
+    font-style: normal;
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+label,
+input,
+select,
+textarea,
+button {
+    font-family: var(--body-text);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+    padding-left: 0%;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+.button {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: start;
+}
+
+button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #eee;
+    background-color: var(--primary-color);
+
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+    text-shadow: 2px 2px black;
+}
+
+
+.message {
+    display: grid;
+    padding-top: 0.1rem;
+}
+
+.feedback {
+    text-align: start;
+    margin-bottom: 0.5rem;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+
 }
