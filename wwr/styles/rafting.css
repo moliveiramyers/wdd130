@@ -201,6 +201,25 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.contactfooter p {
+    grid-column: 1/2;
+
+}
+
+.contactlink {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.contactlink a {
+    grid-column: 2/3;
+    text-align: center;
+    text-decoration: none;
+    font-style: var(--body-text);
+    color: var(--primary-color);
+}
+
 footer p {
     text-align: center;
     padding-right: 20px;
