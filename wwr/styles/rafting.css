@@ -1,5 +1,4 @@
 * {
-    max-width: 900px;
     padding-left: 10px;
     padding-right: 10px;
     max-width: 100%;
@@ -20,8 +19,6 @@
 
 body {
     position: absolute;
-    display: flex;
-    flex-direction: column;
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -30,8 +27,6 @@ body {
 
 header {
     font-family: var(--body-text);
-    /* font-optical-sizing: auto; */
-    /* font-weight: weight; */
     font-style: normal;
     display: grid;
     grid-template-columns: 30% 20% 1fr;
@@ -87,16 +82,15 @@ h2 {
 main {
     padding-left: 0%;
     padding-right: 0%;
-    /* position: relative; */
 }
 
 .hero {
     position: relative;
-    max-width: 840px;
+    /* max-width: 100%; */
 }
 
 .hero img {
-    width: 100%;
+    width: 80rem;
     height: auto;
     padding: 0%;
     display: block;
@@ -105,21 +99,22 @@ main {
 .hero h1 {
     position: absolute;
     top: 5%;
-    left: 1%;
+    left: 6%;
     background-color: rgba(236, 235, 243, 0.6);
     padding: 20px 262px 20px 295px;
     color: var(--primary-color);
+    font-size: 3rem;
 }
 
 .hero article {
     position: absolute;
-    display: flex;
     top: 40%;
-    left: 7%;
-    width: 80%;
+    left: 14%;
+    width: 90%;
     gap: 15px;
     background-color: rgba(50, 51, 104, 0.6);
     justify-content: end;
+    font-size: 1rem;
 }
 
 .hero article img {
@@ -129,8 +124,8 @@ main {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     margin-left: 15px;
-    justify-content: end;
     top: 40px;
+    left: 32rem;
     z-index: 1;
 }
 
@@ -151,8 +146,14 @@ main {
 .historysection {
     position: relative;
     display: flex;
-    padding-top: 60px;
-    align-items: start;
+    flex-direction: column;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    width: 80rem;
+    padding: 3rem 0 5rem 0;
+}
+
+.historysection div {
+    display: flex;
 }
 
 .historysection img {
@@ -162,32 +163,32 @@ main {
 }
 
 .historysection h2 {
-    position: absolute;
-    top: 0px;
-    left: 350px;
+    text-align: center;
 }
 
 .riverpics {
-    display: grid;
-    grid-template-columns: repeat(5, 160px);
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
     padding-top: 70px;
     padding-bottom: 20px;
     padding-left: 0%;
     background-color: var(--accent1-color);
+    width: 80rem;
+
 }
 
 .riverpics h2 {
-    position: absolute;
-    left: 300px;
-    top: 980px;
+    text-align: center;
+}
+
+.riverpics div {
+    display: flex;
+    flex-direction: row;
 }
 
 .riverpics img {
-    width: 150px;
-    grid-row: 1/2;
+    width: 10rem;
     padding-left: 0%;
-
 }
 
 .riverpics figcaption {
@@ -217,7 +218,7 @@ footer {
     text-align: center;
     text-decoration: none;
     font-style: var(--body-text);
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
 footer p {
@@ -294,19 +295,19 @@ footer p {
     border-right: 1px solid var(--heading-color);
 }
 
-figure {
+.employee figure {
     display: flex;
     justify-content: start;
     padding-left: 0%;
     margin: 0%;
 }
 
-figure img {
+.contactinfo figure img {
     width: 30px;
     padding: 0.5rem;
 }
 
-figcaption {
+.contactinfo figcaption {
     display: flex;
     font-size: medium;
     color: var(--primary-color);
@@ -364,7 +365,7 @@ button {
     font-style: normal;
 }
 
-label {
+.contactinfo label {
     text-align: left;
     padding-right: 1rem;
     padding-left: 0%;
@@ -377,7 +378,7 @@ textarea {
     font-size: 1rem;
 }
 
-input[type="checkbox"] {
+.contactinfo input[type="checkbox"] {
     width: 15px;
     height: 15px;
     vertical-align: bottom;
@@ -416,4 +417,227 @@ button:hover {
 .column2 {
     grid-template-columns: 1fr 2fr;
 
+}
+
+/* Home Page */
+
+.homediv {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    padding-top: 2rem;
+}
+
+.signform {
+    height: 30rem;
+    display: grid;
+    grid-template-rows: 30% 20% 10% 10% 30%;
+}
+
+.signform fieldset {
+    grid-row: 1/6;
+    grid-column: 1/3;
+}
+
+.checkbox {
+    font-size: small;
+}
+
+.signform button {
+    height: 2rem;
+}
+
+.calling {
+    background-color: rgba(205, 211, 231, 0.6);
+    width: 32rem;
+    padding: 0.01rem;
+    padding-left: 2rem;
+    border-radius: 0.5rem;
+}
+
+.calling h3 {
+    color: #1b1104;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    border: 1px solid rgb(5, 4, 102);
+    width: 27.6rem;
+}
+
+.calling a {
+    color: var(--heading-color);
+    text-decoration: none;
+
+}
+
+/* images grid */
+
+.col2 {
+    display: grid;
+    grid-row: 50% 50%;
+    padding: 0%;
+}
+
+.col2 div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0%;
+}
+
+.col2 figure {
+    padding: 0%;
+
+}
+
+.col2 img {
+    padding: 0%;
+
+}
+
+.col2 figcaption {
+    position: absolute;
+
+}
+
+.col2 a {
+    text-decoration: none;
+    font-family: var(--heading-font);
+    color: #274C77;
+}
+
+.col2 p {
+    font-size: 1rem;
+    width: 30rem;
+    text-align: justify;
+    font-family: var(--heading-font);
+    color: #274C77;
+    padding-left: 0.9rem;
+    position: absolute;
+    top: 83rem;
+}
+
+a:hover {
+    text-shadow: 2px 2px black;
+}
+
+.mainimg img {
+    width: 44rem;
+}
+
+.mainimg {
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+    font-size: 3rem;
+
+}
+
+.mainimg figcaption {
+    top: 78rem;
+    padding: 0%;
+    padding-bottom: 5rem;
+    text-shadow: 6px 2px rgb(247, 240, 240);
+    background-color: rgba(247, 240, 240, 0.6);
+    border-radius: 0.8rem;
+}
+
+.secondary {
+    width: 15rem;
+    padding: 0%;
+}
+
+.img1 {
+    padding: 0;
+    width: 22rem;
+    margin: 0;
+}
+
+.img2 {
+    padding: 0;
+    width: 22.1rem;
+    margin: 0;
+}
+
+
+/* Trip Page */
+
+.contactcalling {
+    color: var(--heading-color);
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 2rem;
+
+
+}
+
+.contactcalling h1 {
+    margin-bottom: 0%;
+}
+
+.contactcalling a {
+    text-decoration: none;
+    color: var(--heading-color);
+    font-size: 2rem;
+    font-family: var(--heading-font);
+}
+
+.trippics {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+
+.trippics img {
+    width: 26rem;
+    height: 18rem;
+    display: block;
+}
+
+
+.text {
+    color: var(--heading-color);
+    font-size: 1.8em;
+    text-align: justify;
+    width: 24rem;
+}
+
+.text h1 {
+    font-size: 1.2em;
+}
+
+
+.wwrinfo {
+    display: flex;
+    justify-content: center;
+
+}
+
+.wwrinfo table {
+    border: 2px solid var(--heading-color);
+    font-family: var(--body-text);
+    color: #274C77;
+    font-size: 2em;
+    padding: 0%;
+
+}
+
+.wwrinfo caption {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.wwrinfo th {
+    background-color: var(--accent1-color);
+    padding: 0%;
+}
+
+.wwrinfo td,
+.wwrinfo th {
+    border: 1px solid #274C77;
+    padding: 8px 10px;
+}
+
+.footertrip {
+    display: flex;
 }
