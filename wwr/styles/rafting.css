@@ -473,7 +473,7 @@ button:hover {
 
 .col2 {
     display: grid;
-    grid-row: 50% 50%;
+    grid-row: 1fr 1fr;
     padding: 0%;
 }
 
